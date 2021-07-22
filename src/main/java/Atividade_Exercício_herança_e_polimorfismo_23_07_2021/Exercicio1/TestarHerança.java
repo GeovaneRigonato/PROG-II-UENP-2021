@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Atividade_Herança_Caminhão_06_07_2021;
+package Atividade_Exercício_herança_e_polimorfismo_23_07_2021.Exercicio1;
 
 /**
  *
@@ -12,9 +12,12 @@ package Atividade_Herança_Caminhão_06_07_2021;
 public class TestarHerança {
 
     public static void main(String[] args) {
-        Veiculo veiculo = new Veiculo("Hyundai", 2020, 58_000.0);
-        Caminhao caminhao = new Caminhao("Scania", 2020, 595_000.0, 100);
+        Veiculo veiculo = new Veiculo("AAA-1113","Hyundai", 2021, 76_000.0);
+        Veiculo veiculo1 = new Veiculo("AAA-0000","Chevrolet", 2021, 137_000.0);
+        Caminhao caminhao = new Caminhao("AAA-1113","Scania", 2020, 595_000.0, 100);
         System.out.println(caminhao.calcularIPVA());
+        System.out.println(veiculo.getPlaca().equals(veiculo1.getPlaca()));
+        System.out.println(veiculo.getPlaca().equals(caminhao.getPlaca()));
      // System.out.println(veiculo.calcularIPVA()); -> Não funciona, pois o método calcularIPVA pertence a classe Caminhao
     }
 }

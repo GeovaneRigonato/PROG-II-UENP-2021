@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Atividade_Herança_Caminhão_06_07_2021;
+package Atividade_Exercício_herança_e_polimorfismo_23_07_2021.Exercicio1;
 
 /**
  *
@@ -19,8 +19,8 @@ public class Caminhao extends Veiculo {
         
     }
     
-    public Caminhao(String marca, Integer ano, Double valor, Integer capacidadeDeCarga){
-       super(marca, ano, valor);
+    public Caminhao(String placa, String marca, Integer ano, Double valor, Integer capacidadeDeCarga){
+       super(placa, marca, ano, valor);
        this.capacidadeDeCarga = capacidadeDeCarga;
     }
     
