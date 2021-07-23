@@ -9,17 +9,19 @@ package Atividade_Exercício_herança_e_polimorfismo_23_07_2021.Exercicio2;
  *
  * @author geovane_rigonato
  */
-public abstract class Funcionario {
+public class Gerente extends Funcionario{
     private double salarioMes;
     
-    public Funcionario(){
+    
+    public Gerente(){
         salarioMes = 0;
     }
     
-    public Funcionario(double salarioMes){
+    public Gerente(double salarioMes){
         this.salarioMes = salarioMes;
     }
     
-    public abstract double calcularSalario();
-    
+    public double calcularSalario(){
+        return salarioMes  = salarioMes +(salarioMes*0.1);
+    }
 }
